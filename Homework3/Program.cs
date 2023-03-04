@@ -44,7 +44,7 @@ double lenght = Math.Round(Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)
 Console.WriteLine("Длина отрезка равна = " + lenght);
 */
 //Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-
+/*
 int n = 0;
 do
 {
@@ -55,3 +55,29 @@ for (int i = 1; i <= n; i++)
 {
     Console.WriteLine($"{i}^2 = {Math.Pow(i, 3)}");
 }
+*/
+// Доп. задание
+// Написать метод для разворота массива, не используя память под дополнительный массив
+void PrintArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+    Console.WriteLine();
+}
+void ReverseArray(int[] arr)
+{
+    int temp = 0;
+    for (int i = 0; i < arr.Length / 2; i++)
+    {
+        temp = arr[i];
+        arr[i] = arr[arr.Length - 1 - i];
+        arr[arr.Length - 1 - i] = temp;
+    }
+}
+
+int[] array = { 1, 2, 3, 4, 5, 6 };
+PrintArray(array);
+ReverseArray(array);
+PrintArray(array);
