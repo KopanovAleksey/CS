@@ -1,6 +1,6 @@
 ﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
 // Напишите программу, которая покажет количество чётных чисел в массиве.
-
+/*
 int[] getRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -70,3 +70,4 @@ int diffMaxFromMin(int[] array)
 int[] newArray = getRandomArray(10, -100, 100);
 printArray(newArray);
 Console.WriteLine(diffMaxFromMin(newArray));
+*/

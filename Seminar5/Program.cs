@@ -1,4 +1,5 @@
-﻿int[] getRandomArray(int lenght, int minValue, int maxValue)
+﻿/*
+int[] getRandomArray(int lenght, int minValue, int maxValue)
 {
     int[] array = new int[lenght];
     for (int i = 0; i < array.Length; i++)
@@ -118,3 +119,4 @@ int[] oldArray = getRandomArray(8, 0, 10);
 printArray(oldArray);
 int[] newArray = productOfArrayElementPairs(oldArray);
 printArray(newArray);
+*/
